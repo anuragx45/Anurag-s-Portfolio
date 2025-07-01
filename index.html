@@ -1,0 +1,188 @@
+    
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag's portfolio</title>
+    <link rel="stylesheet" href="portfolio 4.css" />
+    <script src="portfolio4.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <div id="home" class="container ">
+      <!-- Navbar Desktop aur Mobile le liye -->
+<div class="navbar">
+  <ul style="list-style: none;">
+    <li><a href="#">Anurag</a></li>
+    <li class="hideOnMobile"><a href="#home">Home</a></li>
+    <li class="hideOnMobile"><a href="#About">About</a></li>
+    <li class="hideOnMobile"><a href="#service">Service</a></li>
+    <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+    <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
+
+    <!-- Hamburger menu icon ( mobile ke liye ) -->
+    <li class="menu-button" onclick="showsidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Sidebar mobile ke liye  -->
+<ul class="sidebar" style="list-style: none;">
+  <li onclick="hidesidebar()">
+    <a href="#" style="  fill: white !important;">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">
+  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+</svg>
+</a>
+</li>
+    </a>
+  </li>
+  <li><a href="#">Anurag</a></li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#About">About</a></li>
+  <li><a href="#service">Service</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#Contact">Contact</a></li>
+</ul>
+
+    
+      <div  id="Home">
+        I Am
+        <div class="name">Anurag Mishra</div>
+        A Software Developer<br/>
+      <button class="click">Pervious Project</button>
+    </div>                          
+   </div>
+    <!-- About section start -->
+
+<div id="About">
+  <!-- Image section -->
+  <div class="img2">
+    <img src="Anurag1.jpg" alt="Anurag" />
+  </div>
+
+  <!-- About content -->
+  <div class="aboutsect">
+    <h1 class="Abinfo">About Me</h1>
+    <p class="Abi">Hey I'm</p>
+    <h1 class="name">Anurag Mishra</h1>
+    <p id="Infsec">
+      A motivated front-end web developer who loves building websites that combine form and function. I stay curious and continuously learn new technologies to deliver innovative and impactful results.
+    </p>
+  </div>
+</div>
+
+    <!-- servise section -->
+<div id="service">
+  <div class="ser-container">
+    <div class="sec">
+      <div class="content">
+        <h3>Web Designer</h3>
+        <p>
+          A motivated developer with a strong foundation in HTML, CSS, and JavaScript, eager to expand their skills in modern frameworks. Dedicated to building clean, responsive interfaces.
+        </p>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="content">
+        <h3>UI/UX Designer</h3>
+        <p>
+          Passionate about creating intuitive, visually appealing experiences. I focus on user-centered design and ensure smooth navigation and beautiful interactions.
+        </p>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="content">
+        <h3>Photo Editor</h3>
+        <p>
+          Skilled in enhancing images and creating impactful visuals. Focused on color correction, retouching, and crafting artistic compositions for digital media.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+  <!-- Skills section start from hear -->
+  <div id="skills">
+  <div class="skill-contn">
+    <h1>My <span>Skills</span></h1>
+    <div class="skill-contn1">
+      <h2 id="move-me">Technical Skills</h2>
+      <ul class="skill-lang">
+        <li>
+          <h4>HTML</h4><span>90%</span>
+          <div class="bar"><div class="bar-line1"></div></div>
+        </li>
+        <li>
+          <h4>CSS</h4><span>70%</span>
+          <div class="bar"><div class="bar-line2"></div></div>
+        </li>
+        <li>
+          <h4>JavaScript</h4><span>50%</span>
+          <div class="bar"><div class="bar-line3"></div></div>
+        </li>
+        <li>
+          <h4>JQ</h4><span>60%</span>
+          <div class="bar"><div class="bar-line4"></div></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  
+
+  <!-- Contact section start from hear -->
+  <div id="Contact">
+    <div class="cont-info">
+ 
+     <!-- Send Me a Message Form Moved Up -->
+     <div class="mycont1">
+       <h3>Send Me a Message</h3>
+       <div class="input-group">
+         <input type="text" id="f-name" placeholder="First Name">
+         <input type="text" id="L-name" placeholder="Last Name">
+       </div>
+       <div class="input-group">
+         <input type="text" id="Email" placeholder="Email">
+         <input type="text" id="Number" placeholder="Number">
+       </div>
+     </div>
+ 
+     <div class="line"></div>
+ 
+     <!-- Contact Information Moved Down -->
+     <div class="my-cont">
+       <h4>Contact Information</h4>
+       <div class="phone">
+         <i class="fa-solid fa-phone"></i>&nbsp;<span>Phone:</span> 932697****
+       </div>
+       <div class="email">
+         <i class="fa-solid fa-envelope"></i> Email: <span>anuragmishra200527@gmail.com</span>
+       </div>
+     </div>
+ 
+     <div class="socal">
+       <i class="fa-brands fa-square-github"></i>
+       <i class="fa-solid fa-comments"></i>
+       <i class="fa-brands fa-figma"></i> 
+       <i class="fa-solid fa-palette"></i>
+     </div>
+ 
+    </div>
+ </div>
+ </body>
+ </html>
