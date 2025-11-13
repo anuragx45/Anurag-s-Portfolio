@@ -116,7 +116,7 @@ body {
 
 @media (max-width: 400px) {
   .sidebar {
-    width: 100%; 
+    width: 100%; /* Optional: Full width for very small screens */
   }
 }
 
@@ -126,10 +126,10 @@ body {
 
 #Home {
   width: 100%;
-  max-width: 490px; 
+  max-width: 490px; /* optional */
   font-size: 35px;
   color: gray;
-  margin: 120px 20px 0 20px; 
+  margin: 120px 20px 0 20px; /* fixed */
 }
 
 #Home:hover {
@@ -518,6 +518,20 @@ body {
   gap: 20px;
   justify-content: center;
   margin-bottom: 15px;
+}
+.btn{
+  height: 32px;
+  width: 55px;
+  font-size: 16px;
+  font-weight: 500px;
+  margin: 22px 0 0 0 ;
+  border-radius: 8px;
+  border-color: gold;
+  background: gold;
+}
+.btn:hover{
+   border-color: gold;
+  box-shadow: 0 0 5px rgba(238, 213, 66, 0.79);
 }
 
 .mycont1 input {
