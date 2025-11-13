@@ -8,10 +8,12 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-html body{
-  height: 100%;
+html body {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  
+  height: 100%;
+  overflow-x: hidden;
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
@@ -19,45 +21,43 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-
-.container{
+.container {
   height: 730px;
   /* background-image: url(port.jpg); */
   background-color: rgb(0, 0, 33);
   background-size: cover;
   background-repeat: no-repeat;
-  margin: auto;                             
+  margin: auto;
 }
 
 .navbar {
- background: linear-gradient(to right, rgb(34, 34, 108), rgb(0, 0, 33));
-font-size: 20px;
-box-shadow: 3px 3px 5px rgba (0,0,0,0.1);
+  background: linear-gradient(to right, rgb(34, 34, 108), rgb(0, 0, 33));
+  font-size: 20px;
+  box-shadow: 3px 3px 5px rgba (0, 0, 0, 0.1);
 }
-.navbar ul{
+.navbar ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.navbar li{
+.navbar li {
   height: 50px;
-
 }
 
- .navbar a{
-height: 100%;
-padding: 0 30px;
-text-decoration: none;
-display: flex;
-align-items: center;
-color: white;
+.navbar a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
 }
-.navbar a:hover{
+.navbar a:hover {
   color: purple;
   background-color: #f0f0f00d;
 }
-.navbar li:first-child{
+.navbar li:first-child {
   margin-right: auto;
 }
 .sidebar {
@@ -65,10 +65,10 @@ color: white;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+
   z-index: 999;
-  
-   background-color:rgba(0, 0, 33,0.95 );
+
+  background-color: rgba(0, 0, 33, 0.95);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
@@ -89,7 +89,6 @@ color: white;
   display: block;
   font-weight: 500;
   font-size: 18px;
- 
 }
 
 .sidebar a:hover {
@@ -105,9 +104,6 @@ color: white;
   display: none;
 }
 
-
-
-
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -120,22 +116,22 @@ color: white;
 
 @media (max-width: 400px) {
   .sidebar {
-    width: 100%; /* Optional: Full width for very small screens */
+    width: 100%; 
   }
 }
 
-.name{
+.name {
   color: white;
 }
 
 #Home {
-  height: 50px;
-  width: 490px;
-
-  font-size: 50px;
+  width: 100%;
+  max-width: 490px; 
+  font-size: 35px;
   color: gray;
-  margin: 160px;
+  margin: 120px 20px 0 20px; 
 }
+
 #Home:hover {
   color: purple;
 }
@@ -161,8 +157,6 @@ color: white;
   background: black;
   color: white;
 }
-
-
 
 @media (max-width: 768px) {
   #Home {
@@ -190,7 +184,6 @@ color: white;
     width: 100%;
   }
 }
-
 
 /* About section start  */
 
@@ -257,7 +250,7 @@ color: white;
 
   .aboutsect {
     max-width: 600px;
-    padding-left: 50px; 
+    padding-left: 50px;
   }
 
   #Infsec {
@@ -368,7 +361,6 @@ color: white;
   text-align: center;
   line-height: 1.5;
 }
-
 
 /* Skills section start from hear */
 
@@ -489,7 +481,6 @@ color: white;
   }
 }
 
-
 /* Contact section start from hear */
 #Contact {
   height: 700px;
@@ -557,7 +548,7 @@ color: white;
   margin-bottom: 15px;
 }
 
-.my-cont .phone,
+
 .my-cont .email {
   font-size: 18px;
   margin: 10px 0;
@@ -586,7 +577,7 @@ color: white;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .mycont1 input {
     width: 100%;
     max-width: 300px;
